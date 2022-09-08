@@ -1,0 +1,119 @@
+// Button-Hero 
+
+.button.primary {
+    border-radius: 4px;
+    border: transparent;
+    padding: 10px 32px;
+    min-width: 216px;
+
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: var(--button-text-color);
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    text-align: center;
+    align-items: center;
+}
+
+// Button-Portfolio
+
+.portfolio-menu__list {
+    display: flex;
+    justify-content: center;
+
+    .portfolio-menu__button+.portfolio-menu__button {
+    margin-left: 8px;
+    }
+}
+
+.portfolio__button {
+    display: inline-block;
+    border-radius: 4px;
+    border: transparent;
+    padding: 6px 22px;
+    min-width: 73px;
+
+    background-color: var(--bcg-button-color);
+    color: var(--primary-text-color);
+    box-shadow: none;
+    border-radius: 4px;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+
+    transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+    background-color: var(--accent-color);
+    color: var(--button-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+// Footerform
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    padding: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: var(--button-text-color);
+    background-color: var(--accent-color);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: var(--accent-color);
+    border-radius: 4px;
+}
+
+// Modal
+
+.form-button {
+    display: flex;
+    content: '';
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    padding: 10px 52px;
+    margin: auto;
+    margin-top: 30px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: var(--button-text-color);
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: var(--accent-color);
+    border-radius: 4px;
+    transition: background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function), cursor 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+    background-color: var(--form-button-bcg-hover);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    }
+}
+

@@ -1,0 +1,50 @@
+/* Social */
+
+.container.social {
+  display: flex;
+  align-items: baseline;
+}
+
+div.vector {
+  margin-left: 70px; 
+}
+
+ .vector .title {
+  margin-bottom: 20px;
+  color: var(--button-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.vector .list {
+  display: flex;
+}
+
+.vector.list .item {
+  margin-right: 10px;
+}
+
+.vector.list .item:last-child {
+  margin-right: 0;
+}
+
+.link-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--button-text-color);
+  background: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms var(--timing-function);
+  
+  &:hover,
+  &:focus {
+  background-color: var(--accent-color);
+  }
+}
+
