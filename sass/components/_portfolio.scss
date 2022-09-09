@@ -1,3 +1,45 @@
+.title-none {
+    display: none;
+}
+
+ul.button.list {
+    display: flex;
+    justify-content: center;
+
+    .item+.item {
+    margin-left: 8px;
+}
+}
+
+.button.secondary {
+    display: inline-block;
+    border-radius: 4px;
+    border: transparent;
+    padding: 6px 22px;
+    min-width: 73px;
+
+    background-color: var(--bcg-button-color);
+    color: var(--primary-text-color);
+    box-shadow: none;
+    border-radius: 4px;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+
+    transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
+    
+    &:hover,
+    &:focus {
+    background-color: var(--accent-color);
+    color: var(--button-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+}
+
 .projects .title {
     color: var(--primary-text-color);
     font-weight: 700;
@@ -41,26 +83,21 @@ ul.projects.list {
     border: 1px solid var(--color-border-projects);
     overflow: hidden;
     transition: box-shadow 250ms var(--timing-function), border 250ms var(--timing-function);
-}
 
-.projects.item:hover {
+   &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
     border: 1px solid var(--color-border-projects);
 }
 
-.projects.item:nth-child(3n) {
-    margin-right: 0;
+    & {
+    @extend %mr-0;
 }
 
-.projects.item:nth-last-child(-n + 3) {
-    margin-bottom: 0;
+    & {
+    @extend %mb-0;
 }
-
-.section.portfolio-collection {
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .collection-name {
@@ -94,9 +131,8 @@ ul.projects.list {
 
     transform: translateY(100%);
     transition: transform 250ms var(--timing-function);
-}
 
-.projects-overlay>p {
+    p {
     padding: 63px 24px;
 
     color: var(--button-text-color);
@@ -106,3 +142,5 @@ ul.projects.list {
     line-height: 1.55;
     letter-spacing: 0.03em;
 }
+}
+

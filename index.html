@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Головна</title>
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
+    /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
 
   <body>
@@ -53,40 +53,42 @@
     </header>
 
     <main>
-      <section class="hero">
-        <div class="overlay">
-          <h1 class="hero-title">
+      <section class="hero__section">
+        <div class="hero__overlay hero">
+          <h1 class="hero__title">
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button type="button" class="button primary" data-modal-open>Замовити послугу</button>
+          <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
       <!--Features-->
-      <section class="section features">
+      <section class="features__section features">
         <div class="container">
-          <h2 class="title-none">Особливості</h2>
+          <h2 class="features__title">Особливості</h2>
           <ul class="features list">
-            <li class="feature first">
-              <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="text">
+            <li class="feature__item--first feature">
+              <h3 class="feature__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="feature__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
-            <li class="feature second">
-              <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="text">
+            <li class="feature__item--second feature">
+              <h3 class="feature__title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="feature__text">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
-            <li class="feature third">
-              <h3 class="title">ПЛАНУВАННЯ</h3>
-              <p class="text">Так само консультація з широким активом значною мірою зумовлює.</p>
+            <li class="feature__item--third feature">
+              <h3 class="feature__title">ПЛАНУВАННЯ</h3>
+              <p class="feature__text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
             </li>
-            <li class="feature fouth">
-              <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="text">
+            <li class="feature__item--fouth feature">
+              <h3 class="feature__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="feature__text">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
@@ -95,48 +97,48 @@
       </section>
 
       <!--Work-->
-      <section class="section works">
+      <section class="works__section">
         <div class="container">
-          <h2 class="title">Чим ми займаємося</h2>
-          <ul class="work list">
-            <li class="item">
-              <div class="thumb-work">
-                <div class="thumb-img">
+          <h2 class="works__title works">Чим ми займаємося</h2>
+          <ul class="works__list">
+            <li class="works__item">
+              <div class="thumb__work thumb">
+                <div class="thumb__img">
                   <img
                     src="./images/box1.jpg"
                     alt="Людина за комп'ютером"
                     width="370"
                     height="294"
                   />
-                  <div class="thumb-card"><p class="thumb-text">Десктопні додатки</p></div>
+                  <div class="thumb__card"><p class="thumb__text">Десктопні додатки</p></div>
                 </div>
               </div>
             </li>
 
-            <li class="item">
-              <div class="thumb-work">
-                <div class="thumb-img">
+            <li class="works__item">
+              <div class="thumb__work thumb">
+                <div class="thumb__img">
                   <img
                     src="./images/box2.jpg"
                     alt="Людина за комп'ютером"
                     width="370"
                     height="294"
                   />
-                  <div class="thumb-card"><p class="thumb-text">Мобільні додатки</p></div>
+                  <div class="thumb__card"><p class="thumb__text">Мобільні додатки</p></div>
                 </div>
               </div>
             </li>
 
-            <li class="item">
-              <div class="thumb-work">
-                <div class="thumb-img">
+            <li class="works__item">
+              <div class="thumb__work thumb">
+                <div class="thumb__img">
                   <img
                     src="./images/box3.jpg"
                     alt="Людина за комп'ютером"
                     width="370"
                     height="294"
                   />
-                  <div class="thumb-card"><p class="thumb-text">Дизайнерські рішення</p></div>
+                  <div class="thumb__card"><p class="thumb__text">Дизайнерські рішення</p></div>
                 </div>
               </div>
             </li>
@@ -145,45 +147,45 @@
       </section>
 
       <!--Command-->
-      <section class="section command">
+      <section class="command__section">
         <div class="container">
-          <h2 class="title">Наша команда</h2>
-          <ul class="command list">
-            <li class="item">
+          <h2 class="command__title command">Наша команда</h2>
+          <ul class="command__list">
+            <li class="command__item">
               <img
                 src="./images/productdesigner.jpg"
                 alt="Product Designer"
                 width="270"
                 height="260"
               />
-              <div class="command-name">
-                <h3 class="title">Ігор Дем'яненко</h3>
-                <p class="post">Product Designer</p>
-                <ul class="vector list">
-                  <li class="item">
-                    <a class="link-svg" href="#" aria-label="instagram">
-                      <svg class="icon" width="20" height="20">
+              <div class="person__name person">
+                <h3 class="person__title">Ігор Дем'яненко</h3>
+                <p class="person__post">Product Designer</p>
+                <ul class="social__list social">
+                  <li class="social__item">
+                    <a class="social__link" href="#" aria-label="instagram">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="item">
-                    <a class="link-svg" href="#" aria-label="twitter">
-                      <svg class="icon" width="20" height="20">
+                  <li class="social__item">
+                    <a class="social__link" href="#" aria-label="twitter">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="item">
-                    <a class="link-svg" href="#" aria-label="facebook">
-                      <svg class="icon" width="20" height="20">
+                  <li class="social__item">
+                    <a class="social__link" href="#" aria-label="facebook">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="item">
-                    <a class="link-svg" href="#" aria-label="linkedin">
-                      <svg class="icon" width="20" height="20">
+                  <li class="social__item">
+                    <a class="social__link" href="#" aria-label="linkedin">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -191,41 +193,41 @@
                 </ul>
               </div>
             </li>
-            <li class="item">
+            <li class="command__item">
               <img
                 src="./images/frontenddeveloper.jpg"
                 alt="Frontend Developer"
                 width="270"
                 height="260"
               />
-              <div class="command-name">
-                <h3 class="title">Ольга Рєпіна</h3>
-                <p class="post">Frontend Developer</p>
-                <ul class="vector list">
-                  <li class="item">
-                    <a class="link-svg" href="#" aria-label="instagram">
-                      <svg class="icon" width="20" height="20">
+              <div class="person__name person">
+                <h3 class="person__title">Ольга Рєпіна</h3>
+                <p class="person__post">Frontend Developer</p>
+                <ul class="social__list social">
+                  <li class="social__item">
+                    <a class="social__link" href="#" aria-label="instagram">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="item">
-                    <a class="link-svg" href="#" aria-label="twitter">
-                      <svg class="icon" width="20" height="20">
+                  <li class="social__item">
+                    <a class="social__link" href="#" aria-label="twitter">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="item">
-                    <a class="link-svg" href="#" aria-label="facebook">
-                      <svg class="icon" width="20" height="20">
+                  <li class="social__item">
+                    <a class="social__link" href="#" aria-label="facebook">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="item">
-                    <a class="link-svg" href="#" aria-label="linkedin">
-                      <svg class="icon" width="20" height="20">
+                  <li class="social__item">
+                    <a class="social__link" href="#" aria-label="linkedin">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -233,36 +235,36 @@
                 </ul>
               </div>
             </li>
-            <li class="item">
+            <li class="command__item">
               <img src="./images/marketing.jpg" alt="Marketing" width="270" height="260" />
-              <div class="command-name">
-                <h3 class="title">Микола Тарасов</h3>
-                <p class="post">Marketing</p>
-                <ul class="vector list">
-                  <li class="item">
-                    <a class="link-svg" href="#" aria-label="instagram">
-                      <svg class="icon" width="20" height="20">
+              <div class="person__name person">
+                <h3 class="person__title">Микола Тарасов</h3>
+                <p class="person__post">Marketing</p>
+                <ul class="social__list social">
+                  <li class="social__item">
+                    <a class="social__link" href="#" aria-label="instagram">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="item">
-                    <a class="link-svg" href="#" aria-label="twitter">
-                      <svg class="icon" width="20" height="20">
+                  <li class="social__item">
+                    <a class="social__link" href="#" aria-label="twitter">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="item">
-                    <a class="link-svg" href="#" aria-label="facebook">
-                      <svg class="icon" width="20" height="20">
+                  <li class="social__item">
+                    <a class="social__link" href="#" aria-label="facebook">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="item">
-                    <a class="link-svg" href="#" aria-label="linkedin">
-                      <svg class="icon" width="20" height="20">
+                  <li class="social__item">
+                    <a class="social__link" href="#" aria-label="linkedin">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -270,36 +272,36 @@
                 </ul>
               </div>
             </li>
-            <li class="item">
+            <li class="command__item">
               <img src="./images/uidesigner.jpg" alt="UI Designer" width="270" height="260" />
-              <div class="command-name">
-                <h3 class="title">Михайло Єрмаков</h3>
-                <p class="post">UI Designer</p>
-                <ul class="vector list">
-                  <li class="item">
-                    <a class="link-svg" href="#" aria-label="instagram">
-                      <svg class="icon" width="20" height="20">
+              <div class="person__name person">
+                <h3 class="person__title">Михайло Єрмаков</h3>
+                <p class="person__post">UI Designer</p>
+                <ul class="social__list social">
+                  <li class="social__item">
+                    <a class="social__link" href="#" aria-label="instagram">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="item">
-                    <a class="link-svg" href="#" aria-label="twitter">
-                      <svg class="icon" width="20" height="20">
+                  <li class="social__item">
+                    <a class="social__link" href="#" aria-label="twitter">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="item">
-                    <a class="link-svg" href="#" aria-label="facebook">
-                      <svg class="icon" width="20" height="20">
+                  <li class="social__item">
+                    <a class="social__link" href="#" aria-label="facebook">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="item">
-                    <a class="link-svg" href="#" aria-label="linkedin">
-                      <svg class="icon" width="20" height="20">
+                  <li class="social__item">
+                    <a class="social__link" href="#" aria-label="linkedin">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                       </svg>
                     </a>

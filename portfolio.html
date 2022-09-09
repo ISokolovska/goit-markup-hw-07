@@ -5,88 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфоліо</title>
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
+    /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
   <body>
     <!--Шапка сайту-->
     <header class="header">
-      <section class="section">
-        <div class="container">
-          <nav class="header__navigation">
-            <a href="./index.html" class="header__logo logo">
-              <span class="logo__first">Web</span><span class="logo__second">Studio</span>
-            </a>
-            <ul class="site-menu__list site-menu">
-              <li class="site-menu__item">
-                <a href="./index.html" class="site-menu__link">Студія</a>
-              </li>
-              <li class="site-menu__item">
-                <a href="Портфоліо" class="site-menu__link site-menu__link--current">Портфоліо</a>
-              </li>
-              <li class="site-menu__item">
-                <a href="Контакти" class="site-menu__link">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-          <ul class="contact__list contact">
-            <li class="contact__item">
-              <a class="contact__link" href="#" aria-label="envelope">
-                <svg class="contact__icon" width="16" height="12">
-                  <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="contact__item">
-              <a class="contact__link" href="#" aria-label="smartphone">
-                <svg class="contact__icon" width="10" height="16">
-                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                </svg>
-                +380961111111
-              </a>
-            </li>
+      <div class="container main-nav">
+        <nav class="nav">
+          <a href="./index.html" class="logo">
+            <span class="logo-first">Web</span><span class="logo-second">Studio</span>
+          </a>
+          <ul class="site-nav list">
+            <li class="item"><a href="./index.html" class="link">Студія</a></li>
+            <li class="item"><a href="Портфоліо" class="link current">Портфоліо</a></li>
+            <li class="item"><a href="Контакти" class="link">Контакти</a></li>
           </ul>
-        </div>
-      </section>
+        </nav>
+        <ul class="auth-nav list">
+          <li class="item">
+            <a class="auth-svg" href="#" aria-label="envelope">
+              <svg class="icon-envelope" width="16" height="12">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="item">
+            <a class="auth-svg" href="#" aria-label="smartphone">
+              <svg class="icon-envelope" width="10" height="16">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +380961111111
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main>
-      <section class="section">
+      <section class="section portfolio-collection">
         <div class="container">
-          <div class="portfolio">
+          <div class="portfolio-collection">
             <h1 class="title-none">Портфоліо</h1>
-            <ul class="portfolio-menu__list portfolio-menu">
-              <li class="portfolio-menu__button">
-                <button type="button" class="portfolio__button">Усі</button>
+            <ul class="button list">
+              <li class="item"><button type="button" class="button secondary">Усі</button></li>
+              <li class="item">
+                <button type="button" class="button secondary">Веб-сайти</button>
               </li>
-              <li class="portfolio-menu__button">
-                <button type="button" class="portfolio__button">Веб-сайти</button>
-              </li>
-              <li class="portfolio-menu__button">
-                <button type="button" class="portfolio__button">Додатки</button>
-              </li>
-              <li class="portfolio-menu__button">
-                <button type="button" class="portfolio__button">Дизайн</button>
-              </li>
-              <li class="portfolio-menu__button">
-                <button type="button" class="portfolio__button">Маркетинг</button>
+              <li class="item"><button type="button" class="button secondary">Додатки</button></li>
+              <li class="item"><button type="button" class="button secondary">Дизайн</button></li>
+              <li class="item">
+                <button type="button" class="button secondary">Маркетинг</button>
               </li>
             </ul>
-
-            <ul class="projects__list projects">
-              <li class="projects__item">
-                <div class="projects__box">
+            <ul class="projects list">
+              <li class="projects item">
+                <div class="box">
                   <img src="./images/technocrack.jpg" alt="technocrack" width="370" height="294" />
-                  <div class="projects__overlay">
+                  <div class="projects-overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -94,14 +79,14 @@
                     </p>
                   </div>
                 </div>
-                <div class="projects__name">
-                  <h2 class="projects__title">Технокряк</h2>
-                  <p class="projects__technology">Веб-сайт</p>
+                <div class="collection-name">
+                  <h2 class="title">Технокряк</h2>
+                  <p class="text">Веб-сайт</p>
                 </div>
               </li>
 
-              <li class="projects__item">
-                <div class="projects__box">
+              <li class="projects item">
+                <div class="box">
                   <img
                     src="./images/posternewstar.jpg"
                     alt="Постер New Orlean vs Golden Star"
@@ -122,8 +107,8 @@
                 </div>
               </li>
 
-              <li class="projects__item">
-                <div class="projects__box">
+              <li class="projects item">
+                <div class="box">
                   <img
                     src="./images/restaurantseafood.jpg"
                     alt="Ресторан Seafood"
@@ -145,8 +130,8 @@
                 </div>
               </li>
 
-              <li class="projects__item">
-                <div class="projects__box">
+              <li class="projects item">
+                <div class="box">
                   <img
                     src="./images/projectprime.jpg"
                     alt="Проєкт Prime"
@@ -168,8 +153,8 @@
                 </div>
               </li>
 
-              <li class="projects__item">
-                <div class="projects__box">
+              <li class="projects item">
+                <div class="box">
                   <img
                     src="./images/projectboxes.jpg"
                     alt="Проєкт Boxes"
@@ -190,8 +175,8 @@
                 </div>
               </li>
 
-              <li class="projects__item">
-                <div class="projects__box">
+              <li class="projects item">
+                <div class="box">
                   <img
                     src="./images/inspiration.jpg"
                     alt="Inspiration has no Borders"
@@ -212,8 +197,8 @@
                 </div>
               </li>
 
-              <li class="projects__item">
-                <div class="projects__box">
+              <li class="projects item">
+                <div class="box">
                   <img
                     src="./images/limitededition.jpg"
                     alt="Видання Limited Edition"
@@ -235,8 +220,8 @@
                 </div>
               </li>
 
-              <li class="projects__item">
-                <div class="projects__box">
+              <li class="projects item">
+                <div class="box">
                   <img src="./images/projectlab.jpg" alt="Проєкт LAB" width="370" height="294" />
                   <div class="projects-overlay">
                     <p>
@@ -253,8 +238,8 @@
                 </div>
               </li>
 
-              <li class="projects__item">
-                <div class="projects__box">
+              <li class="projects item">
+                <div class="box">
                   <img
                     src="./images/growingbusiness.jpg"
                     alt="Growing Business"

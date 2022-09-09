@@ -1,22 +1,23 @@
-@import './utils/var';
-@import './utils/base';
+@import './utils/fonts';
+@import './utils/normalize';
+@import './utils/reset';
+@import './utils/variables';
+@import './base/placeholders';
+@import './utils/common';
 
-@import './sections/header';
-@import './sections/hero';
-@import './sections/features';
-@import './sections/work';
-@import './sections/command';
-@import './sections/regularclient';
-@import './sections/footer';
-@import './sections/portfolio';
+@import './components/header';
+@import './components/hero';
+@import './components/features';
+@import './components/work';
+
+@import './components/command';
+@import './components/regularclient';
+@import './components/footer';
+@import './components/portfolio';
 
 @import './components/logo';
-@import './components/buttons';
-@import './components/social';
 @import './components/footerform';
 @import './components/modal';
-
-
 
 
 
