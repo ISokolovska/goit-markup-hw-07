@@ -1,17 +1,16 @@
-.clients.list {
+.regularclient__list {
   display: flex;
-  justify-content: space-between;
-  
-  .item {
+    
+  .regularclient__item {
   margin-right: 30px;
   border-radius: 1px;
 }
-  .item {
-  @extend %mr-0;
+  .regularclient__item {
+  @extend %mrlast-0;
 }
 }
 
-.clients-svg {
+.regularclient__link {
   display: flex;
   width: 170px;
   height: 92px;
@@ -28,7 +27,7 @@
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
-  .clients-icon {
+  .regularclient__icon {
   fill: currentColor;
 }
 }

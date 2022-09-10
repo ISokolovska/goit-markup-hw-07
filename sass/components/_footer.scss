@@ -5,7 +5,7 @@
     background-color: var(--bcg-hero-color);
 }
 
-.address {
+.contacts__link--address {
     color: var(--button-text-color);
     font-style: normal;
     font-size: 14px;
@@ -20,16 +20,12 @@
 }
 }
 
-.connect {
+.contacts__link {
     color: var(--tertiary-text-color);
-    font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-size: 14px;
-    line-height: 1.7;
     text-decoration: none;
-
     transition: color 250ms var(--timing-function);
-    
+
     &:hover,
     &:focus {
     color: var(--accent-color);
@@ -42,7 +38,7 @@
     margin-bottom: 20px;
 }
 
-.contacts .item {
+.contacts__item {
     margin-top: 9px;
 }
 
@@ -51,10 +47,10 @@
     align-items: baseline;
 }
 
-.vector {
+.prompted {
     margin-left: 70px;
 
-    .title {
+    .prompted__title {
     margin-bottom: 20px;
     color: var(--button-text-color);
     font-weight: 700;
@@ -65,18 +61,18 @@
 }
 }
 
-.vector .list {
+.prompted__list {
     display: flex;
-    
-    .item {
+    .prompted__item {
     margin-right: 10px;
+    
+    & {
+    @extend %mrlast-0;
 }
-    .item:last-child {
-    margin-right: 0;
 }
 }
 
-.link-svg {
+.prompted__link {
     display: flex;
     justify-content: center;
     align-items: center;

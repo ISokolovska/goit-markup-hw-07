@@ -37,7 +37,7 @@
     }
 }
 
-.button-modal-close {
+.modal__button--close {
     display: flex;
     position: absolute;
     content: '';
@@ -57,7 +57,7 @@
     }
 }
 
-.close-svg {
+.modal__svg--close {
     width: 18px;
     height: 18px;
     transition: fill 250ms var(--timing-function);
@@ -67,7 +67,7 @@
     }
 }
 
-.form-title {
+.form__title {
     margin-top: 40px;
     margin-bottom: 12px;
     font-weight: 700;
@@ -78,14 +78,14 @@
     color: var(--primary-text-color);
 }
 
-.form-field {
+.form__field {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
     margin-right: 40px;
     margin-left: 40px;
 
-    .form-label {
+    .form__label {
     position: relative;
     margin-bottom: 4px;
     font-weight: 400;
@@ -97,7 +97,7 @@
 }
 }
 
-.form-icon.first {
+.case__icon--first {
     position: absolute;
     width: 18px;
     height: 18px;
@@ -107,7 +107,7 @@
     transition: fill 250ms var(--timing-function);
 }
 
-.form-icon.second {
+.case__icon--second {
     position: absolute;
     width: 18px;
     height: 18px;
@@ -117,7 +117,7 @@
     transition: fill 250ms var(--timing-function);
 }
 
-.form-icon.third {
+.case__icon--third {
     position: absolute;
     width: 18px;
     height: 18px;
@@ -127,8 +127,8 @@
     transition: fill 250ms var(--timing-function);
 }
 
-.form-input:hover~.form-icon,
-.form-input:focus~.form-icon {
+.case__input:hover~.form-icon,
+.case__input:focus~.form-icon {
     fill: var(--accent-color);
 }
 
@@ -137,7 +137,7 @@
     margin: 0;
     padding: 0;
 
-    .form-input {
+    .case__input {
     margin: 0;
     padding: 0;
     padding-left: 42px;
@@ -156,7 +156,7 @@
 }
 }
 
-.form-field #feedback.form-textarea::placeholder {
+.form__field #feedback.form-textarea::placeholder {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
@@ -181,13 +181,13 @@
 }
 }
 
-.form-fields.checkbox {
+.form__agree--checkbox {
     display: flex;
     content: '';
     align-items: center;
     justify-content: center;
 
-    .form-input.checkbox {
+    .form-agree__input--checkbox {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -199,7 +199,7 @@
 }
 }
 
-.form-input.checkbox:checked+.form-label.text .icon-checkbox {
+.form__input--checkbox:checked+.form-agree__text .form-agree__icon--checkbox {
     background-color: var(--accent-color);
     border: none;
     fill: var(---text-color);
@@ -207,7 +207,7 @@
     cursor: pointer;
 }
 
-.form-label.text {
+.form-agree__text {
     display: flex;
     content: '';
     justify-content: center;
@@ -220,18 +220,18 @@
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 
-    .icon-checkbox {
+    .form-agree__icon--checkbox {
     margin-right: 7px;
     border: 2px solid var(--primary-text-color);
     fill: transparent;
 }
-    .form-link {
+    .form-agree__link {
     margin: 0;
     color: var(--accent-color);
 }
 }
 
-.form-button {
+.form__button {
     display: flex;
     content: '';
     justify-content: center;

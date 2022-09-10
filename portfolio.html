@@ -19,29 +19,31 @@
   <body>
     <!--Шапка сайту-->
     <header class="header">
-      <div class="container main-nav">
-        <nav class="nav">
+      <div class="container main-navigation">
+        <nav class="site-navigation">
           <a href="./index.html" class="logo">
-            <span class="logo-first">Web</span><span class="logo-second">Studio</span>
+            <span class="logo--blue">Web</span><span class="logo--black">Studio</span>
           </a>
-          <ul class="site-nav list">
-            <li class="item"><a href="./index.html" class="link">Студія</a></li>
-            <li class="item"><a href="Портфоліо" class="link current">Портфоліо</a></li>
-            <li class="item"><a href="Контакти" class="link">Контакти</a></li>
+          <ul class="site-navigation__list">
+            <li class="site-navigation__item"><a href="./index.html" class="link">Студія</a></li>
+            <li class="site-navigation__item">
+              <a href="Портфоліо" class="link current">Портфоліо</a>
+            </li>
+            <li class="site-navigation__item"><a href="Контакти" class="link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="auth-nav list">
-          <li class="item">
-            <a class="auth-svg" href="#" aria-label="envelope">
-              <svg class="icon-envelope" width="16" height="12">
+        <ul class="connection__list">
+          <li class="connection__item">
+            <a class="connection__link" href="#" aria-label="envelope">
+              <svg class="connection__icon" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="item">
-            <a class="auth-svg" href="#" aria-label="smartphone">
-              <svg class="icon-envelope" width="10" height="16">
+          <li class="connection__item">
+            <a class="connection__link" href="#" aria-label="smartphone">
+              <svg class="connection__icon" width="10" height="16">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +380961111111
@@ -52,26 +54,33 @@
     </header>
 
     <main>
-      <section class="section portfolio-collection">
+      <section class="section portfolio">
         <div class="container">
-          <div class="portfolio-collection">
-            <h1 class="title-none">Портфоліо</h1>
-            <ul class="button list">
-              <li class="item"><button type="button" class="button secondary">Усі</button></li>
-              <li class="item">
-                <button type="button" class="button secondary">Веб-сайти</button>
+          <div class="portfolio">
+            <h1 class="portfolio__title--none">Портфоліо</h1>
+            <ul class="portfolio-button__list">
+              <li class="portfolio-button__item">
+                <button type="button" class="portfolio__button">Усі</button>
               </li>
-              <li class="item"><button type="button" class="button secondary">Додатки</button></li>
-              <li class="item"><button type="button" class="button secondary">Дизайн</button></li>
-              <li class="item">
-                <button type="button" class="button secondary">Маркетинг</button>
+              <li class="portfolio-button__item">
+                <button type="button" class="portfolio__button">Веб-сайти</button>
+              </li>
+              <li class="portfolio-button__item">
+                <button type="button" class="portfolio__button">Додатки</button>
+              </li>
+              <li class="portfolio-button__item">
+                <button type="button" class="portfolio__button">Дизайн</button>
+              </li>
+              <li class="portfolio-button__item">
+                <button type="button" class="portfolio__button">Маркетинг</button>
               </li>
             </ul>
-            <ul class="projects list">
-              <li class="projects item">
-                <div class="box">
+
+            <ul class="projects__list">
+              <li class="projects__item">
+                <div class="projects__box">
                   <img src="./images/technocrack.jpg" alt="technocrack" width="370" height="294" />
-                  <div class="projects-overlay">
+                  <div class="projects__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -79,21 +88,21 @@
                     </p>
                   </div>
                 </div>
-                <div class="collection-name">
-                  <h2 class="title">Технокряк</h2>
-                  <p class="text">Веб-сайт</p>
+                <div class="projects__type">
+                  <h2 class="projects__name">Технокряк</h2>
+                  <p class="projects__app">Веб-сайт</p>
                 </div>
               </li>
 
-              <li class="projects item">
-                <div class="box">
+              <li class="projects__item">
+                <div class="projects__box">
                   <img
                     src="./images/posternewstar.jpg"
                     alt="Постер New Orlean vs Golden Star"
                     width="370"
                     height="294"
                   />
-                  <div class="projects-overlay">
+                  <div class="projects__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -101,21 +110,21 @@
                     </p>
                   </div>
                 </div>
-                <div class="collection-name">
-                  <h2 class="title">Постер New Orlean vs Golden Star</h2>
-                  <p class="text">Дизайн</p>
+                <div class="projects__type">
+                  <h2 class="projects__name">Постер New Orlean vs Golden Star</h2>
+                  <p class="projects__app">Дизайн</p>
                 </div>
               </li>
 
-              <li class="projects item">
-                <div class="box">
+              <li class="projects__item">
+                <div class="projects__box">
                   <img
                     src="./images/restaurantseafood.jpg"
                     alt="Ресторан Seafood"
                     width="370"
                     height="294"
                   />
-                  <div class="projects-overlay">
+                  <div class="projects__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -124,21 +133,21 @@
                   </div>
                 </div>
 
-                <div class="collection-name">
-                  <h2 class="title">Ресторан Seafood</h2>
-                  <p class="text">Додаток</p>
+                <div class="projects__type">
+                  <h2 class="projects__name">Ресторан Seafood</h2>
+                  <p class="projects__app">Додаток</p>
                 </div>
               </li>
 
-              <li class="projects item">
-                <div class="box">
+              <li class="projects__item">
+                <div class="projects__box">
                   <img
                     src="./images/projectprime.jpg"
                     alt="Проєкт Prime"
                     width="370"
                     height="294"
                   />
-                  <div class="projects-overlay">
+                  <div class="projects__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -147,21 +156,21 @@
                   </div>
                 </div>
 
-                <div class="collection-name">
-                  <h2 class="title">Проєкт Prime</h2>
-                  <p class="text">Маркетинг</p>
+                <div class="projects__type">
+                  <h2 class="projects__name">Проєкт Prime</h2>
+                  <p class="projects__app">Маркетинг</p>
                 </div>
               </li>
 
-              <li class="projects item">
-                <div class="box">
+              <li class="projects__item">
+                <div class="projects__box">
                   <img
                     src="./images/projectboxes.jpg"
                     alt="Проєкт Boxes"
                     width="370"
                     height="294"
                   />
-                  <div class="projects-overlay">
+                  <div class="projects__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -169,21 +178,21 @@
                     </p>
                   </div>
                 </div>
-                <div class="collection-name">
-                  <h2 class="title">Проєкт Boxes</h2>
-                  <p class="text">Додаток</p>
+                <div class="projects__type">
+                  <h2 class="projects__name">Проєкт Boxes</h2>
+                  <p class="projects__app">Додаток</p>
                 </div>
               </li>
 
-              <li class="projects item">
-                <div class="box">
+              <li class="projects__item">
+                <div class="projects__box">
                   <img
                     src="./images/inspiration.jpg"
                     alt="Inspiration has no Borders"
                     width="370"
                     height="294"
                   />
-                  <div class="projects-overlay">
+                  <div class="projects__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -191,21 +200,21 @@
                     </p>
                   </div>
                 </div>
-                <div class="collection-name">
-                  <h2 class="title">Inspiration has no Borders</h2>
-                  <p class="text">Веб-сайт</p>
+                <div class="projects__type">
+                  <h2 class="projects__name">Inspiration has no Borders</h2>
+                  <p class="projects__app">Веб-сайт</p>
                 </div>
               </li>
 
-              <li class="projects item">
-                <div class="box">
+              <li class="projects__item">
+                <div class="projects__box">
                   <img
                     src="./images/limitededition.jpg"
                     alt="Видання Limited Edition"
                     width="370"
                     height="294"
                   />
-                  <div class="projects-overlay">
+                  <div class="projects__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -214,16 +223,16 @@
                   </div>
                 </div>
 
-                <div class="collection-name">
-                  <h2 class="title">Видання Limited Edition</h2>
-                  <p class="text">Дизайн</p>
+                <div class="projects__type">
+                  <h2 class="projects__name">Видання Limited Edition</h2>
+                  <p class="projects__app">Дизайн</p>
                 </div>
               </li>
 
-              <li class="projects item">
-                <div class="box">
+              <li class="projects__item">
+                <div class="projects__box">
                   <img src="./images/projectlab.jpg" alt="Проєкт LAB" width="370" height="294" />
-                  <div class="projects-overlay">
+                  <div class="projects__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -232,21 +241,21 @@
                   </div>
                 </div>
 
-                <div class="collection-name">
-                  <h2 class="title">Проєкт LAB</h2>
-                  <p class="text">Маркетинг</p>
+                <div class="projects__type">
+                  <h2 class="projects__name">Проєкт LAB</h2>
+                  <p class="projects__app">Маркетинг</p>
                 </div>
               </li>
 
-              <li class="projects item">
-                <div class="box">
+              <li class="projects__item">
+                <div class="projects__box">
                   <img
                     src="./images/growingbusiness.jpg"
                     alt="Growing Business"
                     width="370"
                     height="294"
                   />
-                  <div class="projects-overlay">
+                  <div class="projects__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -255,9 +264,9 @@
                   </div>
                 </div>
 
-                <div class="collection-name">
-                  <h2 class="title">Growing Business</h2>
-                  <p class="text">Додаток</p>
+                <div class="projects__type">
+                  <h2 class="projects__name">Growing Business</h2>
+                  <p class="projects__app">Додаток</p>
                 </div>
               </li>
             </ul>
@@ -272,52 +281,56 @@
         <div class="container social">
           <div>
             <a href="./index.html" class="logo">
-              <span class="logo-first">Web</span><span class="logo-third">Studio</span>
+              <span class="logo--blue">Web</span><span class="logo--white">Studio</span>
             </a>
             <!--Contacts-->
             <address class="contacts">
-              <ul class="contacts list">
-                <li class="item">
+              <ul class="contacts__list contacts">
+                <li class="contacts__item">
                   <a
                     href="https://goo.gl/maps/4yeFiKxMRU1gBtnu8"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="address list"
+                    class="contacts__link--address"
                     >м. Київ, пр-т Лесі Українки, 26</a
                   >
                 </li>
-                <li class="item email"><a href="" class="connect">info@devstudio.com</a></li>
-                <li class="item phone"><a href="" class="connect">+38 096 111 11 11</a></li>
+                <li class="contacts__item">
+                  <a href="" class="contacts__link">info@devstudio.com</a>
+                </li>
+                <li class="contacts__item">
+                  <a href="" class="contacts__link">+38 096 111 11 11</a>
+                </li>
               </ul>
             </address>
           </div>
 
-          <div class="vector">
-            <h2 class="title">приєднуйтесь</h2>
-            <ul class="vector list">
-              <li class="item">
-                <a class="link-svg" href="#" aria-label="instagram">
+          <div class="prompted">
+            <h2 class="prompted__title">приєднуйтесь</h2>
+            <ul class="prompted__list">
+              <li class="prompted__item">
+                <a class="prompted__link" href="#" aria-label="instagram">
                   <svg class="icon" width="20" height="20">
                     <use href="./images/symbol-defs.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="item">
-                <a class="link-svg" href="#" aria-label="twitter">
+              <li class="prompted__item">
+                <a class="prompted__link" href="#" aria-label="twitter">
                   <svg class="icon" width="20" height="20">
                     <use href="./images/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="item">
-                <a class="link-svg" href="#" aria-label="facebook">
+              <li class="prompted__item">
+                <a class="prompted__link" href="#" aria-label="facebook">
                   <svg class="icon" width="20" height="20">
                     <use href="./images/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="item">
-                <a class="link-svg" href="#" aria-label="linkedin">
+              <li class="prompted__item">
+                <a class="prompted__link" href="#" aria-label="linkedin">
                   <svg class="icon" width="20" height="20">
                     <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                   </svg>
@@ -325,8 +338,9 @@
               </li>
             </ul>
           </div>
+
           <div>
-            <form class="submit-form" autocomplete="off">
+            <form class="submit-form">
               <div class="submit-field">
                 <label for="email">Підпишіться на розсилку</label>
                 <div class="submit">
