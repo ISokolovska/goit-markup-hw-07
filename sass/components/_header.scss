@@ -1,4 +1,3 @@
-
 .header {
     border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
@@ -6,6 +5,11 @@
 .main-navigation {
     display: flex;
     align-items: center;
+    width: 1200px;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
 }
 
 .site-navigation {
@@ -63,7 +67,7 @@
 }
 }
 
-.connection__list {
+.connection {
     display: flex;
     margin-left: auto;
 

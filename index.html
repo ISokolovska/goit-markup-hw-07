@@ -20,7 +20,7 @@
   <body>
     <!--Site nav-->
     <header class="header">
-      <div class="container main-navigation">
+      <div class="main-navigation">
         <nav class="site-navigation">
           <a href="./index.html" class="logo">
             <span class="logo--blue">Web</span><span class="logo--black">Studio</span>
@@ -33,7 +33,7 @@
             <li class="site-navigation__item"><a href="Контакти" class="link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="connection__list">
+        <ul class="connection">
           <li class="connection__item">
             <a class="connection__link" href="#" aria-label="envelope">
               <svg class="connection__icon" width="16" height="12">
@@ -55,8 +55,8 @@
     </header>
 
     <main>
-      <section class="hero__section">
-        <div class="hero__overlay hero">
+      <section class="hero">
+        <div class="hero__overlay">
           <h1 class="hero__title">
             Ефективні рішення для <br />
             вашого бізнесу
@@ -66,31 +66,31 @@
       </section>
 
       <!--Features-->
-      <section class="features__section features">
+      <section class="features">
+        <h2 class="features__title">Особливості</h2>
         <div class="container">
-          <h2 class="features__title">Особливості</h2>
-          <ul class="features list">
-            <li class="feature__item--first feature">
-              <h3 class="feature__title">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="feature__text">
+          <ul class="features__list">
+            <li class="features__item--first features__item">
+              <h3 class="features__name">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="features__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
-            <li class="feature__item--second feature">
-              <h3 class="feature__title">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="feature__text">
+            <li class="features__item--second features__item">
+              <h3 class="features__name">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="features__text">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
-            <li class="feature__item--third feature">
-              <h3 class="feature__title">ПЛАНУВАННЯ</h3>
-              <p class="feature__text">
+            <li class="features__item--third features__item">
+              <h3 class="features__name">ПЛАНУВАННЯ</h3>
+              <p class="features__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="feature__item--fouth feature">
-              <h3 class="feature__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="feature__text">
+            <li class="features__item--fouth features__item">
+              <h3 class="features__name">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="features__text">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
@@ -99,49 +99,46 @@
       </section>
 
       <!--Work-->
-      <section class="works__section">
+      <section class="works">
+        <h2 class="works__title">Чим ми займаємося</h2>
         <div class="container">
-          <h2 class="works__title works">Чим ми займаємося</h2>
           <ul class="works__list">
             <li class="works__item">
-              <div class="thumb__work thumb">
-                <div class="thumb__img">
-                  <img
-                    src="./images/box1.jpg"
-                    alt="Людина за комп'ютером"
-                    width="370"
-                    height="294"
-                  />
-                  <div class="thumb__card"><p class="thumb__text">Десктопні додатки</p></div>
-                </div>
+              <div class="thumb">
+                <img
+                  src="./images/box1.jpg"
+                  alt="Людина за комп'ютером"
+                  width="370"
+                  height="294"
+                  class="thumb__img"
+                />
+                <div class="thumb__card"><p class="thumb__text">Десктопні додатки</p></div>
               </div>
             </li>
 
             <li class="works__item">
-              <div class="thumb__work thumb">
-                <div class="thumb__img">
-                  <img
-                    src="./images/box2.jpg"
-                    alt="Людина за комп'ютером"
-                    width="370"
-                    height="294"
-                  />
-                  <div class="thumb__card"><p class="thumb__text">Мобільні додатки</p></div>
-                </div>
+              <div class="thumb">
+                <img
+                  src="./images/box2.jpg"
+                  alt="Людина за комп'ютером"
+                  width="370"
+                  height="294"
+                  class="thumb__img"
+                />
+                <div class="thumb__card"><p class="thumb__text">Мобільні додатки</p></div>
               </div>
             </li>
 
             <li class="works__item">
-              <div class="thumb__work thumb">
-                <div class="thumb__img">
-                  <img
-                    src="./images/box3.jpg"
-                    alt="Людина за комп'ютером"
-                    width="370"
-                    height="294"
-                  />
-                  <div class="thumb__card"><p class="thumb__text">Дизайнерські рішення</p></div>
-                </div>
+              <div class="thumb">
+                <img
+                  src="./images/box3.jpg"
+                  alt="Людина за комп'ютером"
+                  width="370"
+                  height="294"
+                  class="thumb__img"
+                />
+                <div class="thumb__card"><p class="thumb__text">Дизайнерські рішення</p></div>
               </div>
             </li>
           </ul>
@@ -149,9 +146,9 @@
       </section>
 
       <!--Command-->
-      <section class="command__section">
+      <section class="command">
+        <h2 class="command__title">Наша команда</h2>
         <div class="container">
-          <h2 class="command__title command">Наша команда</h2>
           <ul class="command__list">
             <li class="command__item">
               <img
@@ -160,10 +157,10 @@
                 width="270"
                 height="260"
               />
-              <div class="person__name person">
+              <div class="person">
                 <h3 class="person__title">Ігор Дем'яненко</h3>
                 <p class="person__post">Product Designer</p>
-                <ul class="social__list social">
+                <ul class="social">
                   <li class="social__item">
                     <a class="social__link" href="#" aria-label="instagram">
                       <svg class="social__icon" width="20" height="20">
@@ -202,10 +199,10 @@
                 width="270"
                 height="260"
               />
-              <div class="person__name person">
+              <div class="person">
                 <h3 class="person__title">Ольга Рєпіна</h3>
                 <p class="person__post">Frontend Developer</p>
-                <ul class="social__list social">
+                <ul class="social">
                   <li class="social__item">
                     <a class="social__link" href="#" aria-label="instagram">
                       <svg class="social__icon" width="20" height="20">
@@ -239,10 +236,10 @@
             </li>
             <li class="command__item">
               <img src="./images/marketing.jpg" alt="Marketing" width="270" height="260" />
-              <div class="person__name person">
+              <div class="person">
                 <h3 class="person__title">Микола Тарасов</h3>
                 <p class="person__post">Marketing</p>
-                <ul class="social__list social">
+                <ul class="social">
                   <li class="social__item">
                     <a class="social__link" href="#" aria-label="instagram">
                       <svg class="social__icon" width="20" height="20">
@@ -276,10 +273,10 @@
             </li>
             <li class="command__item">
               <img src="./images/uidesigner.jpg" alt="UI Designer" width="270" height="260" />
-              <div class="person__name person">
+              <div class="person">
                 <h3 class="person__title">Михайло Єрмаков</h3>
                 <p class="person__post">UI Designer</p>
-                <ul class="social__list social">
+                <ul class="social">
                   <li class="social__item">
                     <a class="social__link" href="#" aria-label="instagram">
                       <svg class="social__icon" width="20" height="20">
@@ -316,9 +313,9 @@
       </section>
 
       <!-- Regular client -->
-      <section class="regularclient__section regularclient">
+      <section class="regularclient">
+        <h2 class="regularclient__title">Постійні клієнти</h2>
         <div class="container">
-          <h2 class="regularclient__title">Постійні клієнти</h2>
           <ul class="regularclient__list">
             <li class="regularclient__item">
               <a class="regularclient__link" href="#" aria-label="yako">
@@ -370,14 +367,14 @@
     <!--Footer-->
     <footer>
       <div class="footer">
-        <div class="container social">
+        <div class="container">
           <div>
             <a href="./index.html" class="logo">
               <span class="logo--blue">Web</span><span class="logo--white">Studio</span>
             </a>
             <!--Contacts-->
             <address class="contacts">
-              <ul class="contacts__list contacts">
+              <ul class="contacts__list">
                 <li class="contacts__item">
                   <a
                     href="https://goo.gl/maps/4yeFiKxMRU1gBtnu8"
@@ -432,7 +429,7 @@
           </div>
 
           <div>
-            <form class="submit-form">
+            <form class="form">
               <div class="submit-field">
                 <label for="email">Підпишіться на розсилку</label>
                 <div class="submit">
@@ -459,7 +456,7 @@
           </svg>
         </button>
 
-        <form>
+        <form class="form">
           <h2 class="form__title">Залиште свої дані, ми вам передзвонимо</h2>
           <div class="form__field">
             <label for="name" class="form__label">Ім'я</label>
@@ -492,7 +489,7 @@
           <div class="form__field">
             <label for="feedback" class="form__label">Коментар</label
             ><textarea
-              class="form-textarea"
+              class="form__textarea"
               name="feedback"
               id="feedback"
               placeholder="Введіть текст"

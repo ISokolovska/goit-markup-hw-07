@@ -1,4 +1,7 @@
-.command__section {
+.command {
+  margin: 0;
+  padding-bottom: 94px;
+  padding-top: 94px;
   background-color: var(--bcg-button-color);
 }
 
@@ -8,10 +11,16 @@
   
  .command__item {
   background-color: var(--button-text-color);
-  }
+  margin-right: 30px;
+  
+    & {
+      @extend %mrlast-0;
+    }
+
+}
 }
 
-.person__name {
+.person {
   padding-top: 30px;
   padding-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -36,7 +45,7 @@
     }
 }
 
-.social__list {
+.social {
   display: flex;
   justify-content: center;
   margin-top: 16px;

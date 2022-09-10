@@ -1,3 +1,10 @@
+.hero {
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
 .hero__overlay {
   max-width: 1600px;
   height: 600px;
@@ -17,10 +24,6 @@
   text-align: center;
 }
 
-.hero {
-  text-align: center;
-}
-
 .hero__title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -34,8 +37,6 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-
-
 
 .hero__button {
   border-radius: 4px;

@@ -1,5 +1,11 @@
-.portfolio__title--none {
+.portfolio {
+    margin: 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+    .portfolio__title--none {
     display: none;
+}
 }
 
 .portfolio-button__list {

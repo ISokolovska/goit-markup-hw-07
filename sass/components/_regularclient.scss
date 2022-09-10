@@ -1,12 +1,19 @@
+.regularclient {
+  margin: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .regularclient__list {
   display: flex;
     
   .regularclient__item {
   margin-right: 30px;
   border-radius: 1px;
-}
-  .regularclient__item {
+
+  & {
   @extend %mrlast-0;
+}
 }
 }
 
